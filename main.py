@@ -90,10 +90,10 @@ def main():
     def update_cc_tickers(tokens_dct, cc_tokens):
         for address in tokens_dct:
             token = tokens_dct[address]
-            #print address, token
+            
             token_ticker = token[u'symbol'].upper()
             
-            if not token.get(u'has_cc_ticker', False):
+            if not token.get(u'has_cc_ticker'):
                 print("\n\nNo ticker:")
                 print(token)
                 #print(cc_tokens.get(token_symbol), "N/A")
@@ -105,18 +105,53 @@ def main():
                 else:
                     token[u'has_cc_ticker'] = False
                     token[u'cc_ticker'] = ""
-            
-            tokens_dct[address] = token
+                
+                tokens_dct[address] = token
         return tokens_dct
+    
+    
+    def consider_mapping(tokens_dct, exceptions_dct):
+        for exception in exceptions_dct:
+            address = exception[u'address']
+            exception_ticker = exception[u'cc_ticker']
+            token = tokens_dct[address]
+
+            #print address, token
+            token_ticker = token[u'cc_ticker']
+
+            if token_ticker != exception_ticker: 
+                print "Found exception to update. Changing:  '" + token_ticker + "' -> '" + exception_ticker + "'"
+                token[u'has_cc_ticker'] = True
+                token[u'cc_ticker'] = exception_ticker
+                token[u'ImageUrl'] = cc_tokens[exception_ticker].get(u'ImageUrl', '')
+                token[u'name'] = cc_tokens[exception_ticker].get(u'Name', '')                    
+                tokens_dct[address] = token
+        return tokens_dct
+    
     
     # 1. Loading data from web and files to memory
     (mew_tokens, cc_tokens, tokens_dct, exceptions_dct) = load_data()
     
     # 2. Adding new tokens
+    print "\n\n2. Adding new tokens..."    
     tokens_dct = add_new_tokens(mew_tokens, tokens_dct)
+    print "\ntokens added"
+    print "-" * 10
 
     # 3. Updating CryptoCompare tokens
+    print "\n\n3. Updating CryptoCompare tokens..."    
     tokens_dct = update_cc_tickers(tokens_dct, cc_tokens)
+    print "\nCC tokens updated"
+    print "-" * 10
+    
+    # 4. Considering exceptions
+    print "\n\n4. Considering exceptions..."    
+    tokens_dct = consider_mapping(tokens_dct, exceptions_dct)
+    print "\nCC tokens updated"
+    print "-" * 10
+
+
+
     
     # 3. write json to file
     write_json_to_file(tokens_dct, TOKENS_LIST_FILENAME)
