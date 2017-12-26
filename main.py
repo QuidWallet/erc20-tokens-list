@@ -1,5 +1,6 @@
  # -*- coding: utf-8 -*-
 import urllib, json
+import requests
 
 
 MEW_TOKENS_URL = "https://raw.githubusercontent.com/kvhnuke/etherwallet/mercury/app/scripts/tokens/ethTokens.json"
@@ -23,6 +24,7 @@ def load_json_from_file(filename):
 def write_json_to_file(data, filename):
     with open(filename, 'w') as outfile:
         json.dump(data, outfile)
+
 
     
 def main():
@@ -127,10 +129,38 @@ def main():
                 token[u'name'] = cc_tokens[exception_ticker].get(u'Name', '')                    
                 tokens_dct[address] = token
         return tokens_dct
+
+    def download_icons(tokens_dct):
+        for token_addr in tokens_dct:
+            token = tokens_dct[token_addr]
+            if token[u'has_cc_ticker'] and token[u'ImageUrl'] and len(token[u'ImageUrl']) > 1:
+                icon_filename = "tokens/icons/" + token_addr + ".png"
+                icon_url = "https://www.cryptocompare.com/" + token[u'ImageUrl']
+                print icon_url
+                #urllib.urlretrieve(icon_url, icon_filename)
+                r = requests.get(icon_url, allow_redirects=True)
+                open(icon_filename, 'wb').write(r.content)
+                
+                #f = open(icon_filename,'wb')
+                #f.write(urllib.urlopen(icon_filename).read())
+                #f.close()
     
-    
+    def print_stats(tokens_dct):
+        print "\n\n"
+        print "*" * 10 
+        print "Number of tokens: " + str(len(tokens_dct))
+        i = 0
+        for token_addr in tokens_dct:
+            if tokens_dct[token_addr][u'has_cc_ticker']:
+                i += 1
+        print "Number of tokens with price: " + str(i)
+        print "*" * 10 
+
+        
     # 1. Loading data from web and files to memory
     (mew_tokens, cc_tokens, tokens_dct, exceptions_dct) = load_data()
+
+    print_stats(tokens_dct)
     
     # 2. Adding new tokens
     print "\n\n2. Adding new tokens..."    
@@ -149,14 +179,14 @@ def main():
     tokens_dct = consider_mapping(tokens_dct, exceptions_dct)
     print "\nCC tokens updated"
     print "-" * 10
-
-
-
     
     # 3. write json to file
     write_json_to_file(tokens_dct, TOKENS_LIST_FILENAME)
     print "\n\nTokens List is saved to file."
-    
+
+    download_icons(tokens_dct)
+    print_stats(tokens_dct)
+
     return
 
 
