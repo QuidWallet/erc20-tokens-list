@@ -1,6 +1,5 @@
 from src.utils import (load_json_from_url,
                        load_json_from_file)
-
 import src.config as config
 
 def load_data():
@@ -10,6 +9,12 @@ def load_data():
     print("-" * 10)
     print("A. MEW token list...")
     mew_tokens = load_json_from_url(config.MEW_TOKENS_URL)
+
+    print("A1. Updating mew token file with custom tokens...")
+    tokens_data = load_json_from_file(config.CUSTOM_TOKENS_FILENAME)
+
+    mew_tokens += tokens_data
+    
     print("A. done.\n")
 
     print("B. CryptoCompare token list...")
@@ -37,7 +42,7 @@ def load_data():
 def add_new_tokens(mew_tokens, tokens_dct, version):        
     print "\n\n2. Adding new tokens..."
     for token in mew_tokens:
-        token_address = token[u'address']
+        token_address = token[u'address'].lower()
         if token_address not in tokens_dct:
             print "\nAdding new Token: "
             print token
@@ -80,7 +85,7 @@ def consider_mapping(tokens_dct, exceptions_dct, cc_tokens, version):
     print "\n\n4. Considering exceptions..."
 
     for exception in exceptions_dct:
-        address = exception[u'address']
+        address = exception[u'address'].lower()
         exception_ticker = exception[u'cc_ticker']
         token = tokens_dct[address]
 

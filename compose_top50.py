@@ -23,24 +23,29 @@ def get_cap_dct(tickers):
     dct = {}
     for ticker in tickers:
         print ticker
-        url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms={tickers}\
-&tsyms=USD".format(tickers=ticker)
-        # print "token: ", ticker
+        url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms={tickers}&tsyms=USD".format(tickers=ticker)
+        print "getting ticker: ", url
         data = load_json_from_url(url)
         if not data.get(u'HasWarning') and data.get(u'Response') != u"Error":
             data = data[u'RAW']
             mark_cap = data[ticker][u'USD'][u'MKTCAP']
             price = data[ticker][u'USD'][u'PRICE']
+            # print "price: ", price
             qnty = mark_cap/float(price)
-            low_price = data[ticker][u'USD'][u'LOW24HOUR']
-            high_price = data[ticker][u'USD'][u'HIGH24HOUR']
+            qnty = int(round(qnty))
+            # print "qnty; ", qnty
+            low_price = float(data[ticker][u'USD'][u'LOW24HOUR'])
+            high_price = float(data[ticker][u'USD'][u'HIGH24HOUR'])
 
             if low_price != high_price:
-                mark_cap_calc = min([high_price, low_price])*qnty
-                dct[ticker] = mark_cap_calc
+                print "lh: ", low_price, qnty
+                mark_cap_calc = low_price * qnty
+                print "mark_cap_calc", mark_cap_calc
+                dct[ticker] = mark_cap_calc             
             else:
                 print "NO PRICE CHANGE! Skipping ", ticker
                 dct[ticker] = 0
+            
         else:
             print "WARNING ", data
         print "-" * 10
@@ -64,8 +69,15 @@ def run():
                            key=lambda (ticker, cap): cap,
                            reverse=True)
     print sorted_by_cap
+
+    tickers_with_price = filter(lambda (ticker, price):
+                                price > 10**6, sorted_by_cap)
+    print "all tokens len: ", len(tickers_with_price)
+    # print "all tokens with price len: ", len()
     top_tokens = map(lambda (token, cap): token,
-                     sorted_by_cap[:config.TOP_TOKENS_LIMIT])
+                     # sorted_by_cap[:config.TOP_TOKENS_LIMIT])
+                     tickers_with_price)
+    
     print "top tokens len: ", len(top_tokens)
     write_json_to_file(top_tokens, config.TOP_TOKENS_FILENAME)
     print "\n\Top nTokens List is saved to file."
