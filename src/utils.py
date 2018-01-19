@@ -18,6 +18,9 @@ def write_json_to_file(data, filename):
     with open(filename, 'w') as outfile:
         json.dump(data, outfile)
 
+def write_string_to_file(content, filename):
+    with open(filename, "w") as text_file:
+        text_file.write(content)
 
 def print_stats(tokens_dct):
     print "\n\n"

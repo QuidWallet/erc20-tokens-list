@@ -18,7 +18,7 @@ def download_icons(tokens_dct, version):
             open(icon_filename, 'wb').write(r.content)
 
             # resize 1x
-            icon_1x = "tokens/icons/" + token_addr + ".png"
+            icon_1x = "result/tokens/icons/" + token_addr + ".png"
             resize_img_cmd_1x = "sips -Z {height} {icon}\
             --out {filename}".format(
                 height=config.TOKEN_ICON_HEIGHT,
@@ -28,7 +28,7 @@ def download_icons(tokens_dct, version):
             os.system(resize_img_cmd_1x)
             
             # resize 2x
-            icon_2x = "tokens/icons/" + token_addr + "@2x.png"
+            icon_2x = "result/tokens/icons/" + token_addr + "@2x.png"
             resize_img_cmd_2x = "sips -Z {height} {icon}\
             --out {filename}".format(
                 height=config.TOKEN_ICON_HEIGHT*2,
@@ -38,7 +38,7 @@ def download_icons(tokens_dct, version):
             os.system(resize_img_cmd_2x)
             
             # resize 3x
-            icon_3x = "tokens/icons/" + token_addr + "@3x.png"
+            icon_3x = "result/tokens/icons/" + token_addr + "@3x.png"
             resize_img_cmd_3x = "sips -Z {height} {icon}\
             --out {filename}".format(
                 height=config.TOKEN_ICON_HEIGHT*3,
