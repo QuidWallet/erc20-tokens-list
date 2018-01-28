@@ -40,11 +40,15 @@ def getInfofromCMC(tokens_dct):
         symbol = token[u'symbol']
         if symbol in cmcDct:
             cmcToken = cmcDct[symbol]
+            token[u'cmc_data'] = True
             token[u'available_supply'] = cmcToken[u'available_supply']
             token[u'total_supply'] = cmcToken[u'total_supply']
             token[u'max_supply'] = cmcToken[u'max_supply']
-            token[u'name'] = cmcToken[u'name']    
+            token[u'name'] = cmcToken[u'name']
+            token[u'cmc_rank'] = int(cmcToken[u'rank'])
 
+
+            
 def createTokenIconsLoader(tokens_dct):
     contentStart = '''
 export function getLocalIcon(contractAddress) {
