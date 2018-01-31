@@ -37,7 +37,7 @@ def getInfofromCMC(tokens_dct):
     
     for tokenAddr in tokens_dct.keys():
         token = tokens_dct[tokenAddr]    
-        symbol = token[u'symbol']
+        symbol = token[u'symbol'].upper()
         if symbol in cmcDct:
             cmcToken = cmcDct[symbol]
             token[u'cmc_data'] = True

@@ -3,4 +3,26 @@
     "symbol":"SPANK",
     "decimal":18,
     "type":"default"
-}]
+},
+{
+    "address":"0xb802b24e0637c2b87d2e8b7784c055bbe921011a",
+    "symbol":"EVE",
+    "decimal":2,
+    "type":"default"
+},
+ {
+     "address":"0x3adfc4999f77d04c8341bac5f3a76f58dff5b37a",
+     "symbol":"PRIX",
+     "decimal":2,
+     "type":"default"
+ },
+ {
+     "address":"0x1b5f21ee98eed48d292e8e2d3ed82b40a9728a22",
+     "symbol":"DATA",
+     "decimal":18,
+     "type":"default"
+}
+ 
+
+
+]

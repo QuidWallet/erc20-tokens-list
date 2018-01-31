@@ -10,12 +10,16 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xef68e7c694f40c8202821edf525de3782458639f.png');
         break;
 
-    case "0x78b7fada55a64dd895d8c8c35779dd8b67fa8a05":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x78b7fada55a64dd895d8c8c35779dd8b67fa8a05.png');
+    case "0xb91318f35bdb262e9423bc7c7c2a3a93dd93c92c":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xb91318f35bdb262e9423bc7c7c2a3a93dd93c92c.png');
         break;
 
     case "0x13f1b7fdfbe1fc66676d56483e21b1ecb40b58e2":
         return require('quid-wallet/app/views/assets/tokens/icons/0x13f1b7fdfbe1fc66676d56483e21b1ecb40b58e2.png');
+        break;
+
+    case "0x2bdc0d42996017fce214b21607a515da41a9e0c5":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x2bdc0d42996017fce214b21607a515da41a9e0c5.png');
         break;
 
     case "0x44197a4c44d6a059297caf6be4f7e172bd56caaf":
@@ -26,8 +30,20 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xf4134146af2d511dd5ea8cdb1c4ac88c57d60404.png');
         break;
 
+    case "0x3adfc4999f77d04c8341bac5f3a76f58dff5b37a":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x3adfc4999f77d04c8341bac5f3a76f58dff5b37a.png');
+        break;
+
     case "0x4e0603e2a27a30480e5e3a4fe548e29ef12f64be":
         return require('quid-wallet/app/views/assets/tokens/icons/0x4e0603e2a27a30480e5e3a4fe548e29ef12f64be.png');
+        break;
+
+    case "0xcc34366e3842ca1bd36c1f324d15257960fcc801":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xcc34366e3842ca1bd36c1f324d15257960fcc801.png');
+        break;
+
+    case "0x13f11c9905a08ca76e3e853be63d4f0944326c72":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x13f11c9905a08ca76e3e853be63d4f0944326c72.png');
         break;
 
     case "0xb97048628db6b661d4c2aa833e95dbe1a905b280":
@@ -66,6 +82,10 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xeb7c20027172e5d143fb030d50f91cece2d1485d.png');
         break;
 
+    case "0x0aef06dcccc531e581f0440059e6ffcc206039ee":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x0aef06dcccc531e581f0440059e6ffcc206039ee.png');
+        break;
+
     case "0xdd007278b667f6bef52fd0a4c23604aa1f96039a":
         return require('quid-wallet/app/views/assets/tokens/icons/0xdd007278b667f6bef52fd0a4c23604aa1f96039a.png');
         break;
@@ -84,10 +104,6 @@ export function getLocalIcon(contractAddress) {
 
     case "0x7c5a0ce9267ed19b22f8cae653f198e3e8daf098":
         return require('quid-wallet/app/views/assets/tokens/icons/0x7c5a0ce9267ed19b22f8cae653f198e3e8daf098.png');
-        break;
-
-    case "0x983f6d60db79ea8ca4eb9968c6aff8cfa04b3c63":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x983f6d60db79ea8ca4eb9968c6aff8cfa04b3c63.png');
         break;
 
     case "0xcb94be6f13a1182e4a4b6140cb7bf2025d28e41b":
@@ -138,12 +154,16 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xc0eb85285d83217cd7c891702bcbc0fc401e2d9d.png');
         break;
 
-    case "0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25.png');
-        break;
-
     case "0x3c75226555fc496168d48b88df83b95f16771f37":
         return require('quid-wallet/app/views/assets/tokens/icons/0x3c75226555fc496168d48b88df83b95f16771f37.png');
+        break;
+
+    case "0x0d88ed6e74bbfd96b831231638b66c05571e824f":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x0d88ed6e74bbfd96b831231638b66c05571e824f.png');
+        break;
+
+    case "0x1063ce524265d5a3a624f4914acd573dd89ce988":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x1063ce524265d5a3a624f4914acd573dd89ce988.png');
         break;
 
     case "0x2e071d2966aa7d8decb1005885ba1977d6038a65":
@@ -168,6 +188,10 @@ export function getLocalIcon(contractAddress) {
 
     case "0xffe8196bc259e8dedc544d935786aa4709ec3e64":
         return require('quid-wallet/app/views/assets/tokens/icons/0xffe8196bc259e8dedc544d935786aa4709ec3e64.png');
+        break;
+
+    case "0xf028adee51533b1b47beaa890feb54a457f51e89":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xf028adee51533b1b47beaa890feb54a457f51e89.png');
         break;
 
     case "0x55648de19836338549130b1af587f16bea46f66b":
@@ -206,6 +230,10 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xfca47962d45adfdfd1ab2d972315db4ce7ccf094.png');
         break;
 
+    case "0xe94327d07fc17907b4db788e5adf2ed424addff6":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xe94327d07fc17907b4db788e5adf2ed424addff6.png');
+        break;
+
     case "0xf333b2ace992ac2bbd8798bf57bc65a06184afba":
         return require('quid-wallet/app/views/assets/tokens/icons/0xf333b2ace992ac2bbd8798bf57bc65a06184afba.png');
         break;
@@ -214,12 +242,12 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x4a42d2c580f83dce404acad18dab26db11a1750e.png');
         break;
 
-    case "0xdf6ef343350780bf8c3410bf062e0c015b1dd671":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xdf6ef343350780bf8c3410bf062e0c015b1dd671.png');
+    case "0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x68d57c9a1c35f63e2c83ee8e49a64e9d70528d25.png');
         break;
 
-    case "0xb5a5f22694352c15b00323844ad545abb2b11028":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xb5a5f22694352c15b00323844ad545abb2b11028.png');
+    case "0xdf6ef343350780bf8c3410bf062e0c015b1dd671":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xdf6ef343350780bf8c3410bf062e0c015b1dd671.png');
         break;
 
     case "0xf85feea2fdd81d51177f6b8f35f0e6734ce45f5f":
@@ -230,8 +258,8 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x73dd069c299a5d691e9836243bcaec9c8c1d8734.png');
         break;
 
-    case "0x2bdc0d42996017fce214b21607a515da41a9e0c5":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x2bdc0d42996017fce214b21607a515da41a9e0c5.png');
+    case "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xe0b7927c4af23765cb51314a0e0521a9645f0e2a.png');
         break;
 
     case "0xa5fd1a791c4dfcaacc963d4f73c6ae5824149ea7":
@@ -250,16 +278,8 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xe8ff5c9c75deb346acac493c463c8950be03dfba.png');
         break;
 
-    case "0xa645264c5603e96c3b0b078cdab68733794b0a71":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xa645264c5603e96c3b0b078cdab68733794b0a71.png');
-        break;
-
     case "0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c":
         return require('quid-wallet/app/views/assets/tokens/icons/0x08711d3b02c8758f2fb3ab4e80228418a7f8e39c.png');
-        break;
-
-    case "0xe7775a6e9bcf904eb39da2b68c5efb4f9360e08c":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xe7775a6e9bcf904eb39da2b68c5efb4f9360e08c.png');
         break;
 
     case "0xdd974d5c2e2928dea5f71b9825b8b646686bd200":
@@ -284,6 +304,10 @@ export function getLocalIcon(contractAddress) {
 
     case "0xd4fa1460f537bb9085d22c7bccb5dd450ef28e3a":
         return require('quid-wallet/app/views/assets/tokens/icons/0xd4fa1460f537bb9085d22c7bccb5dd450ef28e3a.png');
+        break;
+
+    case "0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27.png');
         break;
 
     case "0xfa05a73ffe78ef8f1a739473e462c54bae6567d9":
@@ -350,16 +374,8 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x599346779e90fc3f5f997b5ea715349820f91571.png');
         break;
 
-    case "0x1844b21593262668b7248d0f57a220caaba46ab9":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x1844b21593262668b7248d0f57a220caaba46ab9.png');
-        break;
-
-    case "0xe0b7927c4af23765cb51314a0e0521a9645f0e2a":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xe0b7927c4af23765cb51314a0e0521a9645f0e2a.png');
-        break;
-
-    case "0xb91318f35bdb262e9423bc7c7c2a3a93dd93c92c":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xb91318f35bdb262e9423bc7c7c2a3a93dd93c92c.png');
+    case "0xa645264c5603e96c3b0b078cdab68733794b0a71":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xa645264c5603e96c3b0b078cdab68733794b0a71.png');
         break;
 
     case "0x7654915a1b82d6d2d0afc37c52af556ea8983c7e":
@@ -370,8 +386,8 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xf6cfe53d6febaeea051f400ff5fc14f0cbbdaca1.png');
         break;
 
-    case "0xf028adee51533b1b47beaa890feb54a457f51e89":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xf028adee51533b1b47beaa890feb54a457f51e89.png');
+    case "0x983f6d60db79ea8ca4eb9968c6aff8cfa04b3c63":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x983f6d60db79ea8ca4eb9968c6aff8cfa04b3c63.png');
         break;
 
     case "0x8f8221afbb33998d8584a2b05749ba73c37a938a":
@@ -400,6 +416,10 @@ export function getLocalIcon(contractAddress) {
 
     case "0xd341d1680eeee3255b8c4c75bcce7eb57f144dae":
         return require('quid-wallet/app/views/assets/tokens/icons/0xd341d1680eeee3255b8c4c75bcce7eb57f144dae.png');
+        break;
+
+    case "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244.png');
         break;
 
     case "0x672a1ad4f667fb18a333af13667aa0af1f5b5bdd":
@@ -470,6 +490,10 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xac709fcb44a43c35f0da4e3163b117a17f3770f5.png');
         break;
 
+    case "0xcbcc0f036ed4788f63fc0fee32873d6a7487b908":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xcbcc0f036ed4788f63fc0fee32873d6a7487b908.png');
+        break;
+
     case "0xb8c77482e45f1f44de1745f52c74426c631bdd52":
         return require('quid-wallet/app/views/assets/tokens/icons/0xb8c77482e45f1f44de1745f52c74426c631bdd52.png');
         break;
@@ -486,8 +510,8 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x0e0989b1f9b8a38983c2ba8053269ca62ec9b195.png');
         break;
 
-    case "0xcc34366e3842ca1bd36c1f324d15257960fcc801":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xcc34366e3842ca1bd36c1f324d15257960fcc801.png');
+    case "0xc34b21f6f8e51cc965c2393b3ccfa3b82beb2403":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xc34b21f6f8e51cc965c2393b3ccfa3b82beb2403.png');
         break;
 
     case "0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8":
@@ -506,24 +530,20 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x419c4db4b9e25d6db2ad9691ccb832c8d9fda05e.png');
         break;
 
-    case "0x949bed886c739f1a3273629b3320db0c5024c719":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x949bed886c739f1a3273629b3320db0c5024c719.png');
+    case "0xda6cb58a0d0c01610a29c5a65c303e13e885887c":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xda6cb58a0d0c01610a29c5a65c303e13e885887c.png');
         break;
 
-    case "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xb63b606ac810a52cca15e44bb630fd42d8d1d83d.png');
+    case "0x949bed886c739f1a3273629b3320db0c5024c719":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x949bed886c739f1a3273629b3320db0c5024c719.png');
         break;
 
     case "0x83eea00d838f92dec4d1475697b9f4d3537b56e3":
         return require('quid-wallet/app/views/assets/tokens/icons/0x83eea00d838f92dec4d1475697b9f4d3537b56e3.png');
         break;
 
-    case "0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433.png');
-        break;
-
-    case "0x4993cb95c7443bdc06155c5f5688be9d8f6999a5":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x4993cb95c7443bdc06155c5f5688be9d8f6999a5.png');
+    case "0xe7775a6e9bcf904eb39da2b68c5efb4f9360e08c":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xe7775a6e9bcf904eb39da2b68c5efb4f9360e08c.png');
         break;
 
     case "0x27054b13b1b798b345b591a4d22e6562d47ea75a":
@@ -532,10 +552,6 @@ export function getLocalIcon(contractAddress) {
 
     case "0x6781a0f84c7e9e846dcb84a9a5bd49333067b104":
         return require('quid-wallet/app/views/assets/tokens/icons/0x6781a0f84c7e9e846dcb84a9a5bd49333067b104.png');
-        break;
-
-    case "0x8727c112c712c4a03371ac87a74dd6ab104af768":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x8727c112c712c4a03371ac87a74dd6ab104af768.png');
         break;
 
     case "0xf05a9382a4c3f29e2784502754293d88b835109c":
@@ -570,20 +586,20 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x1a95b271b0535d15fa49932daba31ba612b52946.png');
         break;
 
+    case "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xb63b606ac810a52cca15e44bb630fd42d8d1d83d.png');
+        break;
+
+    case "0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xd0a4b8946cb52f0661273bfbc6fd0e0c75fc6433.png');
+        break;
+
+    case "0x78b7fada55a64dd895d8c8c35779dd8b67fa8a05":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x78b7fada55a64dd895d8c8c35779dd8b67fa8a05.png');
+        break;
+
     case "0x7728dfef5abd468669eb7f9b48a7f70a501ed29d":
         return require('quid-wallet/app/views/assets/tokens/icons/0x7728dfef5abd468669eb7f9b48a7f70a501ed29d.png');
-        break;
-
-    case "0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009.png');
-        break;
-
-    case "0x0d88ed6e74bbfd96b831231638b66c05571e824f":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x0d88ed6e74bbfd96b831231638b66c05571e824f.png');
-        break;
-
-    case "0x26e75307fc0c021472feb8f727839531f112f317":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x26e75307fc0c021472feb8f727839531f112f317.png');
         break;
 
     case "0x1d462414fe14cf489c7a21cac78509f4bf8cd7c0":
@@ -598,6 +614,10 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x0886949c1b8c412860c4264ceb8083d1365e86cf.png');
         break;
 
+    case "0x3136ef851592acf49ca4c825131e364170fa32b3":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x3136ef851592acf49ca4c825131e364170fa32b3.png');
+        break;
+
     case "0xe26517a9967299453d3f1b48aa005e6127e67210":
         return require('quid-wallet/app/views/assets/tokens/icons/0xe26517a9967299453d3f1b48aa005e6127e67210.png');
         break;
@@ -606,12 +626,20 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x697beac28b09e122c4332d163985e8a73121b97f.png');
         break;
 
-    case "0x554c20b7c486beee439277b4540a434566dc4c02":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x554c20b7c486beee439277b4540a434566dc4c02.png');
+    case "0x6531f133e6deebe7f2dce5a0441aa7ef330b4e53":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x6531f133e6deebe7f2dce5a0441aa7ef330b4e53.png');
         break;
 
     case "0xb9e7f8568e08d5659f5d29c4997173d84cdf2607":
         return require('quid-wallet/app/views/assets/tokens/icons/0xb9e7f8568e08d5659f5d29c4997173d84cdf2607.png');
+        break;
+
+    case "0x4993cb95c7443bdc06155c5f5688be9d8f6999a5":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x4993cb95c7443bdc06155c5f5688be9d8f6999a5.png');
+        break;
+
+    case "0x26e75307fc0c021472feb8f727839531f112f317":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x26e75307fc0c021472feb8f727839531f112f317.png');
         break;
 
     case "0xab16e0d25c06cb376259cc18c1de4aca57605589":
@@ -710,10 +738,6 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x0affa06e7fbe5bc9a764c979aa66e8256a631f02.png');
         break;
 
-    case "0xcbcc0f036ed4788f63fc0fee32873d6a7487b908":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xcbcc0f036ed4788f63fc0fee32873d6a7487b908.png');
-        break;
-
     case "0x65292eeadf1426cd2df1c4793a3d7519f253913b":
         return require('quid-wallet/app/views/assets/tokens/icons/0x65292eeadf1426cd2df1c4793a3d7519f253913b.png');
         break;
@@ -730,6 +754,10 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x16b0e62ac13a2faed36d18bce2356d25ab3cfad3.png');
         break;
 
+    case "0x8727c112c712c4a03371ac87a74dd6ab104af768":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x8727c112c712c4a03371ac87a74dd6ab104af768.png');
+        break;
+
     case "0x5c543e7ae0a1104f78406c340e9c64fd9fce5170":
         return require('quid-wallet/app/views/assets/tokens/icons/0x5c543e7ae0a1104f78406c340e9c64fd9fce5170.png');
         break;
@@ -738,16 +766,12 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x5e4abe6419650ca839ce5bb7db422b881a6064bb.png');
         break;
 
-    case "0xc42209accc14029c1012fb5680d95fbd6036e2a0":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xc42209accc14029c1012fb5680d95fbd6036e2a0.png');
+    case "0x103c3a209da59d3e7c4a89307e66521e081cfdf0":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x103c3a209da59d3e7c4a89307e66521e081cfdf0.png');
         break;
 
     case "0x607f4c5bb672230e8672085532f7e901544a7375":
         return require('quid-wallet/app/views/assets/tokens/icons/0x607f4c5bb672230e8672085532f7e901544a7375.png');
-        break;
-
-    case "0x6a0a97e47d15aad1d132a1ac79a480e3f2079063":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x6a0a97e47d15aad1d132a1ac79a480e3f2079063.png');
         break;
 
     case "0x93e682107d1e9defb0b5ee701c71707a4b2e46bc":
@@ -758,28 +782,24 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x58ca3065c0f24c7c96aee8d6056b5b5decf9c2f8.png');
         break;
 
-    case "0x6531f133e6deebe7f2dce5a0441aa7ef330b4e53":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x6531f133e6deebe7f2dce5a0441aa7ef330b4e53.png');
-        break;
-
     case "0x1a7a8bd9106f2b8d977e08582dc7d24c723ab0db":
         return require('quid-wallet/app/views/assets/tokens/icons/0x1a7a8bd9106f2b8d977e08582dc7d24c723ab0db.png');
-        break;
-
-    case "0x103c3a209da59d3e7c4a89307e66521e081cfdf0":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x103c3a209da59d3e7c4a89307e66521e081cfdf0.png');
         break;
 
     case "0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca":
         return require('quid-wallet/app/views/assets/tokens/icons/0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca.png');
         break;
 
-    case "0xea38eaa3c86c8f9b751533ba2e562deb9acded40":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xea38eaa3c86c8f9b751533ba2e562deb9acded40.png');
+    case "0xc42209accc14029c1012fb5680d95fbd6036e2a0":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xc42209accc14029c1012fb5680d95fbd6036e2a0.png');
         break;
 
-    case "0xaf30d2a7e90d7dc361c8c4585e9bb7d2f6f15bc7":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xaf30d2a7e90d7dc361c8c4585e9bb7d2f6f15bc7.png');
+    case "0x6a0a97e47d15aad1d132a1ac79a480e3f2079063":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x6a0a97e47d15aad1d132a1ac79a480e3f2079063.png');
+        break;
+
+    case "0xea38eaa3c86c8f9b751533ba2e562deb9acded40":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xea38eaa3c86c8f9b751533ba2e562deb9acded40.png');
         break;
 
     case "0x7e667525521cf61352e2e01b50faaae7df39749a":
@@ -826,14 +846,6 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x138a8752093f4f9a79aaedf48d4b9248fab93c9c.png');
         break;
 
-    case "0x13f11c9905a08ca76e3e853be63d4f0944326c72":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x13f11c9905a08ca76e3e853be63d4f0944326c72.png');
-        break;
-
-    case "0x0aef06dcccc531e581f0440059e6ffcc206039ee":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x0aef06dcccc531e581f0440059e6ffcc206039ee.png');
-        break;
-
     case "0x0af44e2784637218dd1d32a322d44e603a8f0c6a":
         return require('quid-wallet/app/views/assets/tokens/icons/0x0af44e2784637218dd1d32a322d44e603a8f0c6a.png');
         break;
@@ -842,12 +854,16 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xfad572db566e5234ac9fc3d570c4edc0050eaa92.png');
         break;
 
-    case "0xaaaf91d9b90df800df4f55c205fd6989c977e73a":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xaaaf91d9b90df800df4f55c205fd6989c977e73a.png');
+    case "0x51db5ad35c671a87207d88fc11d593ac0c8415bd":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x51db5ad35c671a87207d88fc11d593ac0c8415bd.png');
         break;
 
     case "0xae4f56f072c34c0a65b3ae3e4db797d831439d93":
         return require('quid-wallet/app/views/assets/tokens/icons/0xae4f56f072c34c0a65b3ae3e4db797d831439d93.png');
+        break;
+
+    case "0xb5a5f22694352c15b00323844ad545abb2b11028":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xb5a5f22694352c15b00323844ad545abb2b11028.png');
         break;
 
     case "0xecd570bbf74761b960fa04cc10fe2c4e86ffda36":
@@ -872,6 +888,10 @@ export function getLocalIcon(contractAddress) {
 
     case "0x744d70fdbe2ba4cf95131626614a1763df805b9e":
         return require('quid-wallet/app/views/assets/tokens/icons/0x744d70fdbe2ba4cf95131626614a1763df805b9e.png');
+        break;
+
+    case "0x1844b21593262668b7248d0f57a220caaba46ab9":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x1844b21593262668b7248d0f57a220caaba46ab9.png');
         break;
 
     case "0x3a1bda28adb5b0a812a7cf10a1950c920f79bcd3":
@@ -910,12 +930,16 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0xe41d2489571d322189246dafa5ebde1f4699f498.png');
         break;
 
+    case "0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xaec2e87e0a235266d9c5adc9deb4b2e29b54d009.png');
+        break;
+
     case "0x41e5560054824ea6b0732e656e3ad64e20e94e45":
         return require('quid-wallet/app/views/assets/tokens/icons/0x41e5560054824ea6b0732e656e3ad64e20e94e45.png');
         break;
 
-    case "0xe94327d07fc17907b4db788e5adf2ed424addff6":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xe94327d07fc17907b4db788e5adf2ed424addff6.png');
+    case "0x554c20b7c486beee439277b4540a434566dc4c02":
+        return require('quid-wallet/app/views/assets/tokens/icons/0x554c20b7c486beee439277b4540a434566dc4c02.png');
         break;
 
     case "0xcb97e65f07da24d46bcdd078ebebd7c6e6e3d750":
@@ -938,16 +962,16 @@ export function getLocalIcon(contractAddress) {
         return require('quid-wallet/app/views/assets/tokens/icons/0x701c244b988a513c945973defa05de933b23fe1d.png');
         break;
 
-    case "0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x3d1ba9be9f66b8ee101911bc36d3fb562eac2244.png');
+    case "0xaf30d2a7e90d7dc361c8c4585e9bb7d2f6f15bc7":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xaf30d2a7e90d7dc361c8c4585e9bb7d2f6f15bc7.png');
         break;
 
     case "0xf8e386eda857484f5a12e4b5daa9984e06e73705":
         return require('quid-wallet/app/views/assets/tokens/icons/0xf8e386eda857484f5a12e4b5daa9984e06e73705.png');
         break;
 
-    case "0x51db5ad35c671a87207d88fc11d593ac0c8415bd":
-        return require('quid-wallet/app/views/assets/tokens/icons/0x51db5ad35c671a87207d88fc11d593ac0c8415bd.png');
+    case "0xaaaf91d9b90df800df4f55c205fd6989c977e73a":
+        return require('quid-wallet/app/views/assets/tokens/icons/0xaaaf91d9b90df800df4f55c205fd6989c977e73a.png');
         break;
 
     case "0x1b9743f556d65e757c4c650b4555baf354cb8bd3":
@@ -976,10 +1000,6 @@ export function getLocalIcon(contractAddress) {
 
     case "0x419d0d8bdd9af5e606ae2232ed285aff190e711b":
         return require('quid-wallet/app/views/assets/tokens/icons/0x419d0d8bdd9af5e606ae2232ed285aff190e711b.png');
-        break;
-
-    case "0xc34b21f6f8e51cc965c2393b3ccfa3b82beb2403":
-        return require('quid-wallet/app/views/assets/tokens/icons/0xc34b21f6f8e51cc965c2393b3ccfa3b82beb2403.png');
         break;
 
     case "0xea1f346faf023f974eb5adaf088bbcdf02d761f4":
