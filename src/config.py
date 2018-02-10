@@ -2,6 +2,7 @@ MEW_TOKENS_URL = "https://raw.githubusercontent.com/kvhnuke/etherwallet/mercury/
 CRYPTOCOMPARE_TOKENS_URL = "https://min-api.cryptocompare.com/data/all/\
 coinlist"
 TOKENS_LIST_FILENAME = "result/tokens/tokens.json"
+TOKENS_VERSION_FILENAME = "result/tokens/version.json"
 TOKENS_EXCEPTIONS_FILENAME = "tokens/exceptions.json"
 CUSTOM_TOKENS_FILENAME = "tokens/manual-tokens.json"
 

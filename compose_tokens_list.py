@@ -49,36 +49,36 @@ def getInfofromCMC(tokens_dct):
 
 
             
-def createTokenIconsLoader(tokens_dct):
-    contentStart = '''
-export function getLocalIcon(contractAddress) {
-    let nextState;
-    switch (contractAddress) {
-    case "0x000_ether":
-        return require('quid-wallet/app/views/assets/icons/ether.png');
-        break;
-'''
-    tokenPaths = ''
-    for tokenAddr in tokens_dct:
-        token = tokens_dct[tokenAddr]
-        if token[u'has_cc_ticker']:
-            tokenPaths += '''
-    case "''' +  tokenAddr + '''":
-        return require('quid-wallet/app/views/assets/tokens/icons/''' + tokenAddr + '''.png');
-        break;
-'''
+# def createTokenIconsLoader(tokens_dct):
+#     contentStart = '''
+# export function getLocalIcon(contractAddress) {
+#     let nextState;
+#     switch (contractAddress) {
+#     case "0x000_ether":
+#         return require('quid-wallet/app/views/assets/icons/ether.png');
+#         break;
+# '''
+#     tokenPaths = ''
+#     for tokenAddr in tokens_dct:
+#         token = tokens_dct[tokenAddr]
+#         if token[u'has_cc_ticker']:
+#             tokenPaths += '''
+#     case "''' +  tokenAddr + '''":
+#         return require('quid-wallet/app/views/assets/tokens/icons/''' + tokenAddr + '''.png');
+#         break;
+# '''
     
-    contentEnd = '''
-    default:
-        return false;
-        break;
-    }\n
-    return false;
-}
-'''
-    content = contentStart + tokenPaths + contentEnd
-    write_string_to_file(content, 'result/tokens/localTokenIcons.js')
-    print " getLocalIcons.js composed "
+#     contentEnd = '''
+#     default:
+#         return false;
+#         break;
+#     }\n
+#     return false;
+# }
+# '''
+#     content = contentStart + tokenPaths + contentEnd
+#     write_string_to_file(content, 'result/tokens/localTokenIcons.js')
+#     print " getLocalIcons.js composed "
     
 
 def run():
@@ -140,7 +140,7 @@ def run():
 
     checkCrytocomapareApiForToken(tokens_dct)
     getInfofromCMC(tokens_dct)
-    createTokenIconsLoader(tokens_dct)
+    #createTokenIconsLoader(tokens_dct)
 
     
     print "downloading icons..."
@@ -156,6 +156,11 @@ def run():
     
     write_json_to_file(tokens_data, config.TOKENS_LIST_FILENAME)
     print "\n\nTokens List is saved to file."
+    
+    # 4. update version
+    version_dct = {"version": list_version}
+    write_json_to_file(version_dct, config.TOKENS_VERSION_FILENAME)
+    print "\n\Version is saved to file."
     
     return None
 
