@@ -14,6 +14,10 @@
     {
 	"address": "0xb98d4c97425d9908e66e53a6fdf673acca0be986",
 	"cc_ticker": "ABT*"
-    }        
+    },
+    {
+	"address": "0x809826cceAb68c387726af962713b64Cb5Cb3CCA",
+	"cc_ticker": "NCASH"
+    }    
     
 ]

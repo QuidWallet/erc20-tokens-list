@@ -39,5 +39,11 @@
      "symbol":"CMS",
      "decimal":6,
      "type":"default"
- }
+ },
+ {
+     "address":"0x809826cceAb68c387726af962713b64Cb5Cb3CCA",
+     "symbol":"nCash",
+     "decimal":18,
+     "type":"default"
+ } 
 ]
