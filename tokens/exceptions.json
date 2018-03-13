@@ -18,6 +18,9 @@
     {
 	"address": "0x809826cceAb68c387726af962713b64Cb5Cb3CCA",
 	"cc_ticker": "NCASH"
+    },
+    {
+	"address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+	"cc_ticker": "ETH"
     }    
-    
 ]
