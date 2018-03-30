@@ -38,7 +38,7 @@ def getInfofromCMC(tokens_dct):
     for tokenAddr in tokens_dct.keys():
         token = tokens_dct[tokenAddr]    
         symbol = token[u'symbol'].upper()
-        if symbol in cmcDct:
+        if symbol in cmcDct and symbol != 'WETH':
             cmcToken = cmcDct[symbol]
             token[u'cmc_data'] = True
             token[u'available_supply'] = cmcToken[u'available_supply']
