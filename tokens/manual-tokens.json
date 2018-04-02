@@ -57,5 +57,13 @@
      "symbol":"BRD",
      "decimal":18,
      "type":"default"
- }  
+ },
+ {
+     "address":"0xf244176246168f24e3187f7288edbca29267739b",
+     "symbol":"HAV",
+     "decimal":18,
+     "type":"default"
+ }
+
+ 
 ]
