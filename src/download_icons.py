@@ -7,7 +7,11 @@ def download_icons(tokens_dct, version):
     for token_addr in tokens_dct:
         token = tokens_dct[token_addr]
         if (token[u'has_cc_ticker'] and token[u'last_change_v'] >= version
+<<<<<<< HEAD
+            and token.get(u'ImageUrl', False) and len(token.get(u'ImageUrl', "") > 1):
+=======
             and token.get(u'ImageUrl', False) and len(token.get(u'ImageUrl', "")) > 1):
+>>>>>>> 29bbbb9aea2d2a721a046168ddf2f4f148340700
             
             icon_filename = "tokens/icons-src/" + token_addr + ".png"
             icon_url = ("https://www.cryptocompare.com/" +
