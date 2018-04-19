@@ -63,7 +63,11 @@
      "symbol":"HAV",
      "decimal":18,
      "type":"default"
+ },
+ {
+     "address":"0xB3775fB83F7D12A36E0475aBdD1FCA35c091efBe",
+     "symbol":"P3D",
+     "decimal":18,
+     "type":"default"
  }
-
- 
 ]
