@@ -69,5 +69,11 @@
      "symbol":"P3D",
      "decimal":18,
      "type":"default"
- }
+ },
+ {
+     "address":"0x69b148395ce0015c13e36bffbad63f49ef874e03",
+     "symbol":"DTA",
+     "decimal":18,
+     "type":"default"
+ } 
 ]
