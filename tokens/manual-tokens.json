@@ -75,5 +75,12 @@
      "symbol":"DTA",
      "decimal":18,
      "type":"default"
+ },
+  {
+     "address":"0x6295ab2be04a617747481b292c390bfca592cf28",
+     "symbol":"TDS",
+     "decimal":18,
+     "type":"default"
  } 
+
 ]
