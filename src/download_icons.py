@@ -6,9 +6,9 @@ import src.config as config
 def download_icons(tokens_dct, version):
     for token_addr in tokens_dct:
         token = tokens_dct[token_addr]
-        if (token[u'has_cc_ticker'] and token[u'last_change_v'] >= version
+        if (token[u'has_cc_ticker'] # and token[u'last_change_v'] >= version
             and token.get(u'ImageUrl', False) and len(token.get(u'ImageUrl', "")) > 1):
-            
+            #if True:
             icon_filename = "tokens/icons-src/" + token_addr + ".png"
             icon_url = ("https://www.cryptocompare.com/" +
                         token[u'ImageUrl'])

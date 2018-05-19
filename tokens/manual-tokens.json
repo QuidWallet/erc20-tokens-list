@@ -81,6 +81,18 @@
      "symbol":"TDS",
      "decimal":18,
      "type":"default"
- } 
+  },
+   {
+     "address":"0x9af4f26941677c706cfecf6d3379ff01bb85d5ab",
+     "symbol":"DRT",
+     "decimal":8,
+     "type":"default"
+   } ,
+   {
+     "address":"0xd0352a019e9ab9d757776f532377aaebd36fd541",
+     "symbol":"FSN",
+     "decimal":8,
+     "type":"default"
+   }
 
 ]

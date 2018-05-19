@@ -22,5 +22,13 @@
     {
 	"address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
 	"cc_ticker": "ETH"
-    }    
+    } ,
+    {
+	"address": "0xe25bcec5d3801ce3a794079bf94adf1b8ccd802d",
+	"cc_ticker": "MAN*"
+    } ,
+    {
+	"address": "0xd0352a019e9ab9d757776f532377aaebd36fd541",
+	"cc_ticker": "FSN*"
+    }        
 ]
